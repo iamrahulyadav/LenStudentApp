@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.nucleustech.mohanoverseas.student"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 12
+        versionName "1.3.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '25.0.2'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.volley:volley:1.0.0'
+    //SUPPORT ANDROID
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile 'com.android.volley:volley:1.0.0'
+    //IMAGE LOAD
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //CHAT UI
+    compile 'hani.momanii.supernova_emoji_library:supernova-emoji-library:0.0.2'
+    compile 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+    // AUTH
+    compile 'com.google.android.gms:play-services-auth:9.2.0'
+    compile 'com.google.firebase:firebase-auth:9.2.0'
+    //DATABASE FIREBASE,UI
+    compile 'com.google.firebase:firebase-database:9.2.0'
+    compile 'com.firebaseui:firebase-ui-database:0.4.1'
+    //STORAGE FIREBASE
+    compile 'com.google.firebase:firebase-storage:9.2.0'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.github.stfalcon:smsverifycatcher:0.3.1'
+    //MESSAGING FIREBASE
+    compile 'com.google.firebase:firebase-messaging:9.2.0'
+    //UTIL
+    compile 'com.zsoltsafrany:needle:1.0.0'
+    //FACEBOOK SDK
+    compile 'com.facebook.android:facebook-android-sdk:4.20.0'
+    // HTTP NETWORK REUESTS
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    // HTTP MIME JAR
+    compile files('libs/httpmime-4.1-beta1.jar')
+}
+apply plugin: 'com.google.gms.google-services'

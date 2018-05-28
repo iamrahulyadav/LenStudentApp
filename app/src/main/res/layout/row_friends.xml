@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="7dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/unknown_avatar" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sample"
+                    android:textAppearance="?android:textAppearance"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_unreadcount"
+                android:layout_width="wrap_content"
+                android:text="2"
+                android:padding="7dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/chat_received_white"
+                android:background="@drawable/ic_incoming"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view_grey_divider"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_medium"/>
+    </LinearLayout>
+
+
+</com.balysv.materialripple.MaterialRippleLayout>

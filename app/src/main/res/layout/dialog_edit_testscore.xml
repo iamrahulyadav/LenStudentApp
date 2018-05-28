@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="GRE/GMAT"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/chat_sent_blue"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_greScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="GRE/GMAT Score"
+                android:inputType="number"
+                android:textColorHint="#999999"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearance" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TOEFL/IELTS/PTE"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/chat_sent_blue"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_toeflScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="TOEFL/IELTS/PTE Score"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                android:textAppearance="?android:textAppearance" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:background="@color/chat_sent_blue"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:background="@color/chat_sent_blue"
+            android:text="Submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
